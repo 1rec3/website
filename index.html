@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1REC3 - Holobionte Tecnológico</title>
+    <meta name="description" content="Colaboración IA • Gamificación • Sistemas Distribuidos • Reconocimiento y Remuneración">
     <style>
         :root {
             --primary: #58a6ff;
             --secondary: #f78166;
+            --accent: #8b949e;
             --background: #0d1117;
             --surface: #161b22;
             --text: #ffffff;
+            --success: #3fb950;
         }
         body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
             margin: 0; 
             background: var(--background); 
             color: var(--text);
@@ -23,11 +26,11 @@
             max-width: 1200px; 
             margin: 0 auto; 
             padding: 40px 20px;
-            text-align: center;
         }
         .hero {
             background: linear-gradient(135deg, var(--surface) 0%, var(--background) 100%);
-            padding: 80px 20px;
+            padding: 100px 20px;
+            text-align: center;
             border-bottom: 1px solid #30363d;
         }
         h1 { 
@@ -67,7 +70,7 @@
         }
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             margin: 60px 0;
         }
@@ -76,10 +79,40 @@
             padding: 30px;
             border-radius: 12px;
             border: 1px solid #30363d;
+            transition: transform 0.2s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
         }
         .feature h3 {
             color: var(--primary);
             margin-bottom: 15px;
+        }
+        .status {
+            background: var(--surface);
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border-left: 4px solid var(--success);
+        }
+        .next-steps {
+            background: linear-gradient(135deg, var(--surface) 0%, var(--background) 100%);
+            padding: 50px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .email-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .email-item {
+            background: var(--surface);
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-family: monospace;
         }
     </style>
 </head>
@@ -91,28 +124,84 @@
             <p class="tagline"><strong>Colaboración IA • Gamificación • Sistemas Distribuidos</strong></p>
             
             <div class="links">
-                <a href="https://github.com/saul3273/holobionte-1rec3">📁 Ver Proyectos</a>
-                <a href="https://github.com/1rec3">👥 Unirse al Holobionte</a>
-                <a href="https://opencollective.com/">💝 Support Us</a>
+                <a href="https://github.com/1rec3/holobionte-1rec3">📁 Proyectos</a>
+                <a href="https://github.com/1rec3">👥 Unirse</a>
+                <a href="mailto:hola@1rec3.com">📧 Contactar</a>
+                <a href="https://opencollective.com/">💝 Apoyar</a>
             </div>
         </div>
     </div>
 
     <div class="container">
+        <!-- Estado Actual -->
+        <div class="status">
+            <h2>🎯 Estado Actual</h2>
+            <p><strong>Infraestructura completa operativa:</strong></p>
+            <ul>
+                <li>✅ Dominio 1rec3.com activo</li>
+                <li>✅ Organización GitHub establecida</li>
+                <li>✅ Sistema de emails configurado</li>
+                <li>✅ DNS y SSL funcionando</li>
+                <li>🚧 Estrategia de remuneración en desarrollo</li>
+            </ul>
+        </div>
+
+        <!-- Características -->
         <div class="features">
             <div class="feature">
                 <h3>🤝 Colaboración IA</h3>
-                <p>Sistemas de inteligencia artificial colaborativa y distribuida</p>
+                <p>Sistemas de inteligencia artificial colaborativa y distribuida para resolver problemas complejos.</p>
             </div>
             <div class="feature">
                 <h3>🎮 Gamificación</h3>
-                <p>Mecánicas de juego aplicadas a procesos complejos</p>
+                <p>Mecánicas de juego aplicadas a procesos de cooperación y desarrollo tecnológico.</p>
             </div>
             <div class="feature">
                 <h3>🌐 Sistemas Distribuidos</h3>
-                <p>Arquitecturas descentralizadas y cooperación masiva</p>
+                <p>Arquitecturas descentralizadas y modelos de cooperación masiva.</p>
+            </div>
+        </div>
+
+        <!-- Emails Simbiontes -->
+        <div style="text-align: center; margin: 50px 0;">
+            <h2>📧 Equipo Simbionte</h2>
+            <div class="email-list">
+                <div class="email-item">ohm@1rec3.com</div>
+                <div class="email-item">midas@1rec3.com</div>
+                <div class="email-item">tao@1rec3.com</div>
+                <div class="email-item">raist@1rec3.com</div>
+                <div class="email-item">saul@1rec3.com</div>
+                <div class="email-item">zero@1rec3.com</div>
+                <div class="email-item">neral@1rec3.com</div>
+            </div>
+        </div>
+
+        <!-- Próximos Pasos -->
+        <div class="next-steps">
+            <h2>🚀 Próximos Objetivos</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>💰 Remuneración</h3>
+                    <p>Grants, sponsorships y desarrollo de productos sostenibles</p>
+                </div>
+                <div class="feature">
+                    <h3>🏆 Reconocimiento</h3>
+                    <p>Participación en competencias y publicación de logros</p>
+                </div>
+                <div class="feature">
+                    <h3>🌱 Expansión</h3>
+                    <p>Crecimiento comunitario y alianzas estratégicas</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <footer style="text-align: center; padding: 40px; border-top: 1px solid #30363d; margin-top: 60px;">
+        <p>🚀 <strong>1REC3 Holobionte Tecnológico</strong> - Construyendo el futuro colaborativo</p>
+        <p>📧 <a href="mailto:hola@1rec3.com" style="color: var(--primary);">hola@1rec3.com</a> | 
+           🐙 <a href="https://github.com/1rec3" style="color: var(--primary);">GitHub</a> | 
+           🌐 <a href="https://1rec3.com" style="color: var(--primary);">1rec3.com</a></p>
+        <p style="opacity: 0.7; margin-top: 20px;">Actualizado: 2025-11-04 09:15</p>
+    </footer>
 </body>
 </html>
